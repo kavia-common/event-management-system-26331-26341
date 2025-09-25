@@ -4,9 +4,21 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply min-h-full bg-[#f9fafb] text-[#111827];
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+.main-surface {
+  @apply bg-white rounded-xl shadow-sm border border-gray-200;
+}
+
+.btn-primary {
+  @apply rounded-md bg-blue-600 px-4 py-2 text-white shadow hover:bg-blue-700 transition disabled:opacity-60;
+}
+
+.btn-secondary {
+  @apply rounded-md bg-amber-500 px-4 py-2 text-white shadow hover:bg-amber-600 transition disabled:opacity-60;
 }
